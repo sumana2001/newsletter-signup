@@ -15,5 +15,6 @@
 ## 🏠 To run on localhost
 - get your mailchimp apikey and list id from https://mailchimp.com/
 - enter the apikey and list id in app.js
+- run the command "npm install" on the terminal
 - run this "node app.js" on the terminal
 - go to http://localhost:3000/ in your web browser once the server is started

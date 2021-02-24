@@ -29,10 +29,10 @@ app.post("/",function(req,res){
         ]
     }
     const jsonData=JSON.stringify(data);
-    const url="https://us7.api.mailchimp.com/3.0/lists/4f02526b98"
+    const url="https://us7.api.mailchimp.com/3.0/lists/ENTER_YOUR_LIST_ID_HERE"
     const options={
         method: "POST",
-        auth: "sumana_09:e8f7d74d670d407d2913d97907645225-us7"
+        auth: "ENTER_YOUR_USERNAME_HERE:ENTER_YOUR_API_KEY_HERE"
     }
     const request=https.request(url,options,function(response){
         response.on("data",function(data){
@@ -56,6 +56,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000,function(){
     console.log("Server started");
 })
-
-//e8f7d74d670d407d2913d97907645225-us7 APIKEY
-//4f02526b98 LIST ID
